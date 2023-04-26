@@ -15,7 +15,7 @@ export default function IndexPage() {
     "Hello Paulo Santos. The latest statement for your via 4005274213474735 was mailed to 123 Collingwood Street, Seattle, WA 98109. "
   )
   const [question, setQuestion] = useState(
-    "what's the mailing address?"
+    "What's the full mailing address?"
   )
 
   const [submitting, setSubmitting] = useState(false)
