@@ -100,13 +100,13 @@ export default function IndexPage() {
           </Button>
 
           <div className="mb-2 justify-items-center justify-content-center justify-content-center"></div>
-          {redacted && (
+          {redacted && mapping && (
             <>
               <Label>Redacted Document</Label>
               <Textarea className="resize-none" value={redacted} />
-<!--               <Label>Entity Mapping</Label>
-              <Textarea className="resize-none" value={mapping} /> -->
-            </> 
+              <Label>Entity Mapping</Label>
+              <Textarea className="resize-none" value={mapping} />
+            </>
           )}
           {redactedAnswer && unredactedAnswer && (
             <>
