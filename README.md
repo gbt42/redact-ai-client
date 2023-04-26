@@ -22,4 +22,4 @@ npx run dev
 
 Frontend template is licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
 
-All the front end was @brianhpchiang 
+All the front end was @bryanhpchiang 
