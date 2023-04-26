@@ -12,10 +12,10 @@ const URL = "https://redactai-production.up.railway.app/"
 
 export default function IndexPage() {
   const [sensitive, setSensitive] = useState(
-    "Hello Paulo Santos. The latest statement for your via 4005274213474735 was mailed to 123 Collingwood Street, Seattle, WA 98109. "
+    "Hello Paulo Santos. The latest statement for your via 4005274213474735 was mailed to 123 Collingwood Street, Seattle, WA 98109."
   )
   const [question, setQuestion] = useState(
-    "what's the mailing address?"
+    "what's the mailing address and email?"
   )
 
   const [submitting, setSubmitting] = useState(false)
@@ -26,7 +26,7 @@ export default function IndexPage() {
   const [unredactedAnswer, setUnredactedAnswer] = useState("")
 
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10 justify-items-center">
       <div className="flex flex-col items-start gap-2">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter sm:text-3xl md:text-5xl lg:text-6xl">
           Redact AI
@@ -34,9 +34,12 @@ export default function IndexPage() {
         <p className="max-w-[700px] text-lg text-muted-foreground sm:text-xl">
           Private inference over your sensitive data
         </p>
+        <p className="max-w-[700px] text-sm font-medium text-black-500">
+          Check out some example prompts in the <a href="https://github.com/gbt4/redactAI" className="text-blue hover:text-blue-700">Github.</a>
+        </p>
       </div>
-      <div className="flex flex-row w-full space-x-4">
-        <div className="flex flex-col gap-4 w-full md:w-1/2">
+      <div className="flex flex-row w-full space-x-2 justify-center">
+        <div className="flex flex-col gap-4 w-full md:w-1/2 justify-center">
           {/* <div className="flex flex-col mb-2"> */}
           <Label>Sensitive Document</Label>
           <Textarea
@@ -96,7 +99,7 @@ export default function IndexPage() {
             {submitting ? "Loading" : "Submit"}
           </Button>
 
-          <div className="mb-2"></div>
+          <div className="mb-2 justify-items-center justify-content-center justify-content-center"></div>
           {redacted && mapping && (
             <>
               <Label>Redacted Document</Label>
