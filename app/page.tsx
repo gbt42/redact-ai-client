@@ -105,8 +105,8 @@ export default function IndexPage() {
               <Label>Redacted Document</Label>
               <Textarea className="resize-none" value={redacted} />
 <!--               <Label>Entity Mapping</Label>
-              <Textarea className="resize-none" value={mapping} />
-            </> -->
+              <Textarea className="resize-none" value={mapping} /> -->
+            </> 
           )}
           {redactedAnswer && unredactedAnswer && (
             <>
