@@ -12,7 +12,7 @@ const URL = "https://redactai-production.up.railway.app/"
 
 export default function IndexPage() {
   const [sensitive, setSensitive] = useState(
-    "Hello Paulo Santos with email at psantos@gmail.com. The latest statement for your via 4005274213474735 was mailed to 123 Collingwood Street, Seattle, WA 98109. "
+    "Hello Paulo Santos. The latest statement for your via 4005274213474735 was mailed to 123 Collingwood Street, Seattle, WA 98109. "
   )
   const [question, setQuestion] = useState(
     "what's the mailing address?"
